@@ -35,6 +35,7 @@
 		CB66B5441D857C3F00834DBF /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		CB66B5461D857D0700834DBF /* shadowBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowBtn.swift; sourceTree = "<group>"; };
 		CB66B5481D857D8400834DBF /* TextFieldOptimize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldOptimize.swift; sourceTree = "<group>"; };
+		CB66B54A1D859AFF00834DBF /* socialApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialApp.entitlements; sourceTree = "<group>"; };
 		FF3DE7C6C606765A5C49C5A1 /* Pods-socialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialApp/Pods-socialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +89,7 @@
 		CB66B52A1D85755C00834DBF /* socialApp */ = {
 			isa = PBXGroup;
 			children = (
+				CB66B54A1D859AFF00834DBF /* socialApp.entitlements */,
 				CB66B5411D857B4D00834DBF /* Controller */,
 				CB66B5401D857B4600834DBF /* Model */,
 				CB66B53F1D857B3D00834DBF /* View */,
@@ -164,6 +166,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5Y36AHZD94;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -381,8 +388,10 @@
 			baseConfigurationReference = 069E66EFE8BEC8C8D35E65AD /* Pods-socialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialApp/socialApp.entitlements;
 				DEVELOPMENT_TEAM = 5Y36AHZD94;
 				INFOPLIST_FILE = socialApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foggystudio.socialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,8 +404,10 @@
 			baseConfigurationReference = FF3DE7C6C606765A5C49C5A1 /* Pods-socialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialApp/socialApp.entitlements;
 				DEVELOPMENT_TEAM = 5Y36AHZD94;
 				INFOPLIST_FILE = socialApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foggystudio.socialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
