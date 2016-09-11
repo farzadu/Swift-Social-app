@@ -13,6 +13,8 @@ import Firebase
 
 class SigninVC: UIViewController {
 
+    @IBOutlet weak var emailTxtField: TextFieldOptimize!
+    @IBOutlet weak var passTxtField: TextFieldOptimize!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,7 +51,29 @@ class SigninVC: UIViewController {
                 print("Farzad: Successfully authenticated with Firebase")
             }
         })
+     
     }
 
+    @IBAction func signInBtnAction(_ sender: AnyObject) {
+        if let email = emailTxtField.text{
+          if  let password = passTxtField.text{
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("succsessfully signed in with email")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("unable to authenticate with email")
+                        }else {
+                            print("create a user")
+                        }
+                    })
+                }
+            })
+            
+        }
+        
+    }
+    }
 }
 
