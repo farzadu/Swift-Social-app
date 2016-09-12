@@ -17,6 +17,8 @@
 		CB66B5451D857C3F00834DBF /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66B5441D857C3F00834DBF /* RoundBtn.swift */; };
 		CB66B5471D857D0700834DBF /* shadowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66B5461D857D0700834DBF /* shadowBtn.swift */; };
 		CB66B5491D857D8400834DBF /* TextFieldOptimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66B5481D857D8400834DBF /* TextFieldOptimize.swift */; };
+		CBFFA84B1D86873A006DB880 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFA84A1D86873A006DB880 /* Constants.swift */; };
+		CBFFA84D1D868B19006DB880 /* feedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFA84C1D868B19006DB880 /* feedVC.swift */; };
 		EB08E68FFBD4B74DE0E9DE4D /* Pods_socialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCDCFC889C17715776F8907 /* Pods_socialApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		CB66B5461D857D0700834DBF /* shadowBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowBtn.swift; sourceTree = "<group>"; };
 		CB66B5481D857D8400834DBF /* TextFieldOptimize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldOptimize.swift; sourceTree = "<group>"; };
 		CB66B54A1D859AFF00834DBF /* socialApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialApp.entitlements; sourceTree = "<group>"; };
+		CBFFA84A1D86873A006DB880 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBFFA84C1D868B19006DB880 /* feedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedVC.swift; sourceTree = "<group>"; };
 		FF3DE7C6C606765A5C49C5A1 /* Pods-socialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialApp/Pods-socialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 		CB66B52A1D85755C00834DBF /* socialApp */ = {
 			isa = PBXGroup;
 			children = (
+				CBFFA8491D868727006DB880 /* Util */,
 				CB66B54A1D859AFF00834DBF /* socialApp.entitlements */,
 				CB66B5411D857B4D00834DBF /* Controller */,
 				CB66B5401D857B4600834DBF /* Model */,
@@ -125,8 +130,17 @@
 			isa = PBXGroup;
 			children = (
 				CB66B52D1D85755C00834DBF /* SigninVC.swift */,
+				CBFFA84C1D868B19006DB880 /* feedVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		CBFFA8491D868727006DB880 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CBFFA84A1D86873A006DB880 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 					CB66B5271D85755C00834DBF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5Y36AHZD94;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -263,6 +278,8 @@
 				CB66B5471D857D0700834DBF /* shadowBtn.swift in Sources */,
 				CB66B5451D857C3F00834DBF /* RoundBtn.swift in Sources */,
 				CB66B52C1D85755C00834DBF /* AppDelegate.swift in Sources */,
+				CBFFA84D1D868B19006DB880 /* feedVC.swift in Sources */,
+				CBFFA84B1D86873A006DB880 /* Constants.swift in Sources */,
 				CB66B5491D857D8400834DBF /* TextFieldOptimize.swift in Sources */,
 				CB66B5431D857B9600834DBF /* ViewShadow.swift in Sources */,
 			);
