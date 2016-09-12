@@ -19,6 +19,7 @@
 		CB66B5491D857D8400834DBF /* TextFieldOptimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66B5481D857D8400834DBF /* TextFieldOptimize.swift */; };
 		CBFFA84B1D86873A006DB880 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFA84A1D86873A006DB880 /* Constants.swift */; };
 		CBFFA84D1D868B19006DB880 /* feedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFA84C1D868B19006DB880 /* feedVC.swift */; };
+		CBFFA8511D86A9B5006DB880 /* ImageRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFA8501D86A9B5006DB880 /* ImageRound.swift */; };
 		EB08E68FFBD4B74DE0E9DE4D /* Pods_socialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCDCFC889C17715776F8907 /* Pods_socialApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		CB66B54A1D859AFF00834DBF /* socialApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialApp.entitlements; sourceTree = "<group>"; };
 		CBFFA84A1D86873A006DB880 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBFFA84C1D868B19006DB880 /* feedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedVC.swift; sourceTree = "<group>"; };
+		CBFFA8501D86A9B5006DB880 /* ImageRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRound.swift; sourceTree = "<group>"; };
 		FF3DE7C6C606765A5C49C5A1 /* Pods-socialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialApp/Pods-socialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				CB66B5441D857C3F00834DBF /* RoundBtn.swift */,
 				CB66B5461D857D0700834DBF /* shadowBtn.swift */,
 				CB66B5481D857D8400834DBF /* TextFieldOptimize.swift */,
+				CBFFA8501D86A9B5006DB880 /* ImageRound.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				CBFFA84B1D86873A006DB880 /* Constants.swift in Sources */,
 				CB66B5491D857D8400834DBF /* TextFieldOptimize.swift in Sources */,
 				CB66B5431D857B9600834DBF /* ViewShadow.swift in Sources */,
+				CBFFA8511D86A9B5006DB880 /* ImageRound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
